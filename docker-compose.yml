@@ -1,0 +1,10 @@
+version: '2'
+services:
+  statesman-engine:
+    container_name: statesman-engine
+    build: .
+    ports:
+    - "8080:8080"
+    - "8081:8081"
+    volumes:
+    - /var/log/statesman-engine
